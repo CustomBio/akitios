@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loles - Site Officiel</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1128588357178511380/1170752638405578752/akitios.jpg?ex=655a2f5c&is=6547ba5c&hm=d6cb12f056990194489a0f4d5e61ca13631645000226f7dcca0a32d300405248&">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #00ccff, #0066cc);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        #title {
+            background: #ff6600;
+            color: white;
+            font-size: 48px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        #biography {
+            font-size: 16px;
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            max-width: 400px;
+        }
+
+        .orange-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .orange-button {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .orange-button:hover {
+            background-color: #e65c00;
+        }
+
+        .blue-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .blue-button {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            background-color: #003366;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blue-button:hover {
+            background-color: #002855;
+        }
+
+        .white-button {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            color: #003366;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .white-button:hover {
+            background-color: #f2f2f2;
+        }
+
+        #discord-button {
+            margin: 20px 0;
+        }
+
+        .discord-button {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            background-color: #7289da;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .discord-button:hover {
+            background-color: #596fbc;
+        }
+
+        #credits {
+            color: #333;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="profile-image" src="https://cdn.discordapp.com/attachments/1128588357178511380/1170752638405578752/akitios.jpg?ex=655a2f5c&is=6547ba5c&hm=d6cb12f056990194489a0f4d5e61ca13631645000226f7dcca0a32d300405248&" alt="Akitios's Image">
+        <div id="title">
+            Akitios
+        </div>
+        <div id="biography">
+            Bonjour, je m'appelle Akitios.
+            Je suis le co-fondateur de la team de hacking Nocturnal.
+        </div>
+        <div class="orange-buttons">
+            <a href="https://www.tiktok.com/@akitios" class="orange-button">Tiktok</a>
+            <a href="https://github.com/akitios_/" class="orange-button">Github</a>
+            <a class="orange-button" onclick="copyToClipboard('akitios')">Discord</a>
+        </div>
+        <div class="blue-buttons">
+            <a href="https://lolesx.github.io/xgen.classic/" class="blue-button">XGEN</a>
+            <a href="https://lolesx.github.io/xgen.ultimate/" class="blue-button">XGEN Ultimate</a>
+            <a href="https://lolesx.github.io/XNAV/" class="white-button">Moteur de recherche</a>
+            <a href="https://lolesx.github.io/XTRE/" class="blue-button">XTRE</a>
+        </div>
+        <div id="discord-button">
+            <a href="https://discord.gg/dK89y9jp9S" class="discord-button">Rejoindre notre serveur Discord</a>
+        </div>
+        <div id="credits">
+            CustomBio By Loles<br>
+            Nocturnal Team 2023
+        </div>
+    </div>
+    
+    <script>
+        function copyToClipboard(text) {
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Nom d'utilisateur copié dans le presse-papiers.");
+        }
+    </script>
+</body>
+</html>
